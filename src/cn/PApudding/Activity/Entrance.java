@@ -10,7 +10,7 @@ public class Entrance {
         if(file.exists()){
             file.delete();
         }
-        Thread scanner = new Thread(new FileScanner("/home"));
+        Thread scanner = new Thread(new FileScanner("."));
         scanner.start();
     }
 }
